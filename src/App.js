@@ -1,4 +1,5 @@
 import React from "react";
+import EffectTutorial from "./UseEffect/EffectTutorial";
 import ReducerTutorial from "./UseReducer/ReducerTutorial";
 import StateTutorial from "./UseState/StateTutorial";
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <StateTutorial />
       <ReducerTutorial />
+      <EffectTutorial />
     </div>
   );
 }
