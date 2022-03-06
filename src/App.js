@@ -1,19 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
+import ReducerTutorial from "./UseReducer/ReducerTutorial";
+import StateTutorial from "./UseState/StateTutorial";
 
-const StateTutorial = () => {
-  const [inputValue, setInputValue] = useState("Pedro");
-
-  let onChange = (event) => {
-    const newValue = event.target.value;
-    setInputValue(newValue);
-  };
-
+function App() {
   return (
-    <div>
-      <input placeholder="enter something..." onChange={onChange} />
-      {inputValue}
+    <div className="App">
+      <StateTutorial />
+      <ReducerTutorial />
     </div>
   );
-};
+}
 
-export default StateTutorial;
+export default App;
